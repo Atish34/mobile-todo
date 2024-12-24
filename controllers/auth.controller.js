@@ -32,7 +32,7 @@ exports.adminLogin = asyncHandler(async(req,res) => {
     }})
 })
 exports.adminLogout = asyncHandler(async(req,res) => {
-    res.clearCoookie("todo-admin")
+    res.clearCookie("todo-admin")
     res.json({message:"admin logout success"})
 })
 
@@ -65,6 +65,6 @@ exports.employeeLogin = asyncHandler(async(req,res) => {
     }})
 })
 exports.employeeLogout = asyncHandler(async(req,res) => {
-    res.clearCoookie("todo-employee")
+    res.clearCookie("todo-employee")
     res.json({message:"admin logout success"})
 })
