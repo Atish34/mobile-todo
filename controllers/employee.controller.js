@@ -1,4 +1,5 @@
 const asyncHandler = require("express-async-handler")
+const Todo = require("../model/Todo")
 
 exports.readEmployeeTodo = asyncHandler(async(req,res)=>{
     const result = await Todo.find({employee:req.employee})
